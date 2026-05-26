@@ -1,0 +1,419 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+
+    /* Background */
+    background-color: #F8FAFC;
+
+    /* Text */
+    color: #111827;
+}
+
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+
+
+header {
+
+    /* Dark Blue */
+    background-color: #1E3A8A;
+
+    color: white;
+    padding: 20px 0;
+}
+
+
+
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+
+nav ul li a:hover {
+
+    /* Primary Blue */
+    color: #2563EB;
+}
+
+
+
+
+.hero {
+
+    background-color: #EAF2FF;
+
+    padding: 80px 0;
+}
+
+
+
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+
+
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h2 {
+
+    /* Dark Blue */
+    color: #1E3A8A;
+
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+
+
+.btn {
+    display: inline-block;
+
+    /* Primary Blue */
+    background-color: #2563EB;
+
+    color: white;
+
+    padding: 12px 25px;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+
+
+
+.btn:hover {
+
+    /* Dark Blue */
+    background-color: #1E3A8A;
+
+    transform: scale(1.05);
+}
+
+
+
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+
+
+section {
+    padding: 70px 0;
+}
+
+section h2 {
+
+    /* Dark Blue */
+    color: #1E3A8A;
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+    font-size: 36px;
+}
+
+
+
+.about p {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+
+
+.skills-container {
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 20px;
+}
+
+
+.card {
+
+    /* Cards */
+    background-color: #FFFFFF;
+
+    padding: 30px 20px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+}
+
+
+/* Card Hover */
+
+.card:hover {
+    transform: translateY(-10px);
+
+    box-shadow: 0 8px 20px rgba(37,99,235,0.2);
+}
+
+.card h3 {
+
+    /* Dark Blue */
+    color: #1E3A8A;
+
+    margin-bottom: 15px;
+}
+
+
+
+
+.project-list {
+    max-width: 500px;
+    margin: auto;
+
+    list-style: square;
+
+    padding-left: 20px;
+
+    font-size: 18px;
+}
+
+.project-list li {
+    margin-bottom: 10px;
+}
+
+
+
+
+.gallery-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+
+
+
+.gallery-container img {
+
+    width: 300px;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+form {
+
+    max-width: 600px;
+
+    margin: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+
+
+form input,
+form textarea {
+
+    padding: 15px;
+
+    border: 1px solid #D1D5DB;
+
+    border-radius: 5px;
+
+    font-size: 16px;
+
+    outline: none;
+
+    background-color: #FFFFFF;
+}
+
+
+
+
+form input:focus,
+form textarea:focus {
+
+    border-color: #2563EB;
+}
+
+
+
+form textarea {
+    resize: none;
+}
+
+
+
+
+form button {
+
+    background-color: #2563EB;
+
+    color: white;
+
+    border: none;
+
+    padding: 15px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+
+form button:hover {
+
+    background-color: #1E3A8A;
+}
+
+
+
+
+footer {
+
+    background-color: #1E3A8A;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px 0;
+}
+
+footer h2 {
+    margin-bottom: 15px;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    header .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text h2 {
+        font-size: 36px;
+    }
+
+    .gallery-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
